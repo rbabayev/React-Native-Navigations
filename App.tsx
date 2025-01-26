@@ -7,7 +7,7 @@ const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
-        <Text>App</Text>
+        <Text className='text-red-600 font-semibold text-xl'>App</Text>
       </SafeAreaView>
 
     </SafeAreaProvider>
