@@ -2,14 +2,16 @@ import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
 import React from 'react'
 import "./global.css"
+import Login from './src/screens/login/Login'
+import Home from './src/screens/home/Home'
 
 const App = () => {
   return (
     <SafeAreaProvider>
       <SafeAreaView style={{ flex: 1 }}>
-        <Text className='text-red-600 font-semibold text-xl'>App</Text>
+        {/* <Login/> */}
+        <Home />
       </SafeAreaView>
-
     </SafeAreaProvider>
   )
 }
