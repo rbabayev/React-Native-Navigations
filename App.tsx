@@ -1,21 +1,12 @@
-import { StyleSheet, Text, View } from 'react-native'
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
-import React from 'react'
-import "./global.css"
-import Login from './src/screens/login/Login'
-import Home from './src/screens/home/Home'
-
+import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaProvider, SafeAreaView} from 'react-native-safe-area-context';
+import React from 'react';
+import './global.css';
+import Navigations from './src/screens/Navigations/Navigations';
 const App = () => {
-  return (
-    <SafeAreaProvider>
-      <SafeAreaView style={{ flex: 1 }}>
-        {/* <Login/> */}
-        <Home />
-      </SafeAreaView>
-    </SafeAreaProvider>
-  )
-}
+  return <Navigations />;
+};
 
-export default App
+export default App;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
